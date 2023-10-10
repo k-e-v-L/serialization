@@ -1,5 +1,6 @@
 # serialization
 I am using brocode tutorial, studying by watching/coding
+
     // Serialization = The process of converting an object into a byte stream.
     //                 Persists (saves the state) the object after program exits
     //                 This byte stream can be saved as a file or sent over a network
