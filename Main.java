@@ -1,7 +1,4 @@
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -25,5 +22,9 @@ public class Main {
 
         //Prints a message to indicate that the object info has been saved
         System.out.println("Object info saved!");
+
+        //Prints the serial version UID for the User class
+        long serialVersionUID = ObjectStreamClass.lookup(user.getClass()).getSerialVersionUID();
+        System.out.println("SerialVersionUID for user class: " + serialVersionUID);
     }
 }
